@@ -1,13 +1,29 @@
-package ejerciciosTema3;
+package EjerciciosTema4;
 
-public class Ejercicio_While {
+public class EjercicioBucles {
 
     public static void exeWhile() {
-                Ejercicio_While ejercicioWhile = new Ejercicio_While();
-        int contador = 10;
-        while (contador >= 0) {
+        EjercicioBucles ejercicioWhile = new EjercicioBucles();
+        int contador = 0;
+        while (contador < 3) {
             System.out.println(contador);
-            contador--;
+            contador++;
+        }
+    }
+
+    public static void exeDoWhile() {
+        EjercicioBucles ejercicioDoWhile = new EjercicioBucles();
+        int contador = 3;
+        do {
+            System.out.println(contador);
+            contador++;
+        } while (contador < 3);
+    }
+
+    public static void exeFor() {
+        for (int numero = 0; numero <= 3; numero++) {
+            System.out.println(numero);
         }
     }
 }
+

@@ -5,13 +5,16 @@ public class Inicio {
         ejercicioCoche();
 
         operacionesMath();
+
     }
+
+
 
     private static void operacionesMath() {
 
         FuncionesAvanzadas funciones = new FuncionesAvanzadas();
 
-        int param1 = 10;
+        int param1 = 11;
         int param2 = 5;
         int param3 = 1;
 
@@ -20,6 +23,7 @@ public class Inicio {
 
     private static void ejercicioCoche() {
         Coche miCoche = new Coche();
+        miCoche.addPuerta();
         miCoche.addPuerta();
         System.out.println("Mi coche tiene " + miCoche.puertas + " puertas.");
     }
